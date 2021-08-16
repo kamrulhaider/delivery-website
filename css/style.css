@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 /* color variables */
 :root {
-  --top: #293b5f;
-  --bg: #b2ab8c;
-  --bg2: #dbe6fd;
-  --bg3: #47597e;
+  --top: #222831;
+  --bg: #d5eebb;
+  --bg2: #78dec7;
+  --bg3: #5f7a61;
   --text: #000000;
 }
 body {
@@ -31,6 +31,7 @@ body {
 .banner-btn button {
   background-color: var(--bg);
   border-radius: 25px;
+  box-shadow: 5px 5px 5px var(--top);
 }
 .banner-btn button:last-child {
   background-color: var(--bg3);
