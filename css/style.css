@@ -1,5 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* color variables */
 :root {
-  --top: #1e6f5c;
-  --bg: #29bb89;
-  --text: #e6dd3b;
+  --top: #293b5f;
+  --bg: #b2ab8c;
+  --bg2: #dbe6fd;
+  --bg3: #47597e;
+  --text: #000000;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* topbar styles */
+.pacific-nav {
+  background-color: var(--top);
+}
+.top-btn a {
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--bg);
+  border-radius: 25px;
+}
+.top-btn a:last-child {
+  background-color: var(--bg2);
+}
+
+/* banner styles */
+.banner {
+  background-color: var(--bg2);
+}
+.banner-btn button {
+  background-color: var(--bg);
+  border-radius: 25px;
+}
+.banner-btn button:last-child {
+  background-color: var(--bg3);
+}
+.banner-btn button > a {
+  color: var(--text);
+  text-decoration: none;
+}
+.banner-btn button:last-child > a {
+  color: var(--bg2);
 }
