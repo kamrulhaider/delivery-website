@@ -78,3 +78,20 @@ body {
 .mobile-screen {
   border-radius: 25px;
 }
+
+/* network section styles */
+.network {
+  background-image: url(../images/network-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px 100px;
+}
+.net-text h1,
+.net-color {
+  color: var(--bg);
+}
+.net-text h3,
+.net-aus {
+  color: var(--bg2);
+}
