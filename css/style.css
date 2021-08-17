@@ -10,6 +10,15 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* common styles */
+.heading1 {
+  color: var(--bg3);
+}
+.heading2 {
+  color: var(--top);
+}
+
 /* topbar styles */
 .pacific-nav {
   background-color: var(--top);
@@ -32,6 +41,10 @@ body {
   background-color: var(--bg);
   border-radius: 25px;
   box-shadow: 5px 5px 5px var(--top);
+  transition: all 0.4s ease-in-out;
+}
+.banner-btn button:hover {
+  box-shadow: 0px 0px 20px var(--top);
 }
 .banner-btn button:last-child {
   background-color: var(--bg3);
@@ -42,4 +55,21 @@ body {
 }
 .banner-btn button:last-child > a {
   color: var(--bg2);
+}
+
+/* long banner style */
+.long-banner img {
+  border-radius: 70px 0;
+}
+
+/* why choose us section style */
+.icon-style {
+  height: 48px;
+  width: 48px;
+  border-radius: 5px;
+  background-color: var(--bg3);
+}
+.icon-style i {
+  color: var(--bg);
+  font-size: 25px;
 }
