@@ -95,3 +95,12 @@ body {
 .net-aus {
   color: var(--bg2);
 }
+
+/* partner section styles */
+.partner-card {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.partner-card:hover {
+  box-shadow: 0px 0px 25px var(--top);
+}
