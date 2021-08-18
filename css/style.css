@@ -151,14 +151,14 @@ body {
 }
 .price-btn {
   width: 100%;
-  border: 1px solid transparent;
+  border: 2px solid var(--bg3);
   border-radius: 25px;
   color: var(--text);
   transition: all 0.4s ease-out;
 }
 .price-btn:hover {
   background-color: var(--text2);
-  border: 1px solid var(--bg3);
+  border: 2px solid var(--text);
 }
 .cost-input,
 .cost-output {
@@ -189,4 +189,18 @@ body {
   padding-left: 5px;
   padding-top: 2px;
   color: var(--bg3);
+}
+
+/* footer styles */
+footer {
+  background-color: var(--top);
+}
+.footer-link li a {
+  text-decoration: none;
+  color: var(--bg2);
+  transition: all 0.4s ease-in;
+}
+.footer-link li a:hover {
+  text-decoration: none;
+  color: var(--text2);
 }
