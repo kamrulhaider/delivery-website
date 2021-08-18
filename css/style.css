@@ -139,6 +139,12 @@ body {
 }
 
 /* price check section style */
+.delivery {
+  background-image: url(../images/form-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .cost-form {
   background-color: var(--bg3);
   border-radius: 5px;
