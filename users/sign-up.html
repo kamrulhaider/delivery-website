@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Cliffs</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="../images/fevicon.png" type="image/x-icon">
+
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9385f749a3.js" crossorigin="anonymous"></script>
+
+    <!-- custom css link-->
+    <link rel="stylesheet" href="../css/sign-up.css">
+</head>
+
+<body>
+    <header>
+        <!-- topbar start -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-2 pacific-nav">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="../index.html">
+                    <img class="logo img-fluid" src="../images/logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="top-btn my-2 ms-auto">
+                        <a class="ms-lg-3 px-3 fw-bold py-1" href="../drivers/sing-in.html">I'm a Driver</a>
+                        <a class="ms-lg-3 px-3 fw-bold py-1" href="sign-in.html">I'm a Customer</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- topbar end -->
+    </header>
+
+    <main>
+        <section class="sign-up container-fluid vh-100">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-md-8">
+                    <div class="row sign-shadow">
+                        <div class="col-md-4 g-0 d-lg-block d-none">
+                            <img class="img-fluid h-100 rounded-3" src="../images/form/sign-up.jpg" alt="">
+                        </div>
+                        <div class="col-md-12 g-md-0 d-lg-none d-block">
+                            <img class="w-100 sign-up-img rounded-3" src="../images/form/form-img.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-md-12 g-md-0">
+                            <div class="card" style="width: 100%;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-color">Customer Sign Up</h5>
+                                    <p>Create an account to get started logging deliveries</p>
+                                    <div class="mb-3">
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Bussiness
+                                        </label>
+                                        <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Individual
+                                        </label>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div class="form-floating mb-3 w-100 me-1">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="example name">
+                                            <label for="floatingInput">First name</label>
+                                        </div>
+                                        <div class="form-floating mb-3 w-100 ms-1">
+                                            <input type="text" class="form-control" id="floatingInput"
+                                                placeholder="example name">
+                                            <label for="floatingInput">Last name</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput"
+                                            placeholder="name@example.com">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">Phone</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                        </ul>
+                                        <input type="text" class="form-control"
+                                            aria-label="Text input with dropdown button">
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="floatingPassword"
+                                            placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                I've read and accept the terms of service
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="#" class="btn w-50 btn-success mt-3">Sign me up</a>
+                                    </div>
+                                    <div class="mt-2 d-flex justify-content-center">
+                                        <p class="text-muted d-inline">Already have an account?</p>
+                                        <a class="text-decoration-none text-success ms-2" href="sign-in.html">Sing
+                                            in</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
