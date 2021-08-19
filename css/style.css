@@ -22,8 +22,7 @@ body {
 
 /* topbar styles */
 .logo {
-  width: 100%;
-  height: 50px;
+  height: 45px;
 }
 .pacific-nav {
   background-color: var(--top);
