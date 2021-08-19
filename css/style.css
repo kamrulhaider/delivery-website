@@ -206,12 +206,17 @@ body {
 footer {
   background-color: var(--top);
 }
-.footer-link li a {
+.footer-link li a,
+.address {
   text-decoration: none;
   color: var(--bg2);
   transition: all 0.4s ease-in;
 }
 .footer-link li a:hover {
   text-decoration: none;
+  color: var(--text2);
+}
+.phone-email {
+  cursor: pointer;
   color: var(--text2);
 }
