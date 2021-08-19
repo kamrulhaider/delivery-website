@@ -48,6 +48,7 @@ body {
 /* banner styles */
 .banner {
   background-color: var(--bg2);
+  margin-top: 70px;
 }
 .banner-btn button {
   background-color: var(--bg);
