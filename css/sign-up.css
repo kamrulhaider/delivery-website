@@ -43,6 +43,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .text-color {
   color: var(--bg3);
