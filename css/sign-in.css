@@ -10,6 +10,12 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background: rgb(174, 238, 200);
+  background: linear-gradient(
+    90deg,
+    rgba(174, 238, 200, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 /* topbar styles */
 .logo {
@@ -34,9 +40,6 @@ body {
 }
 
 /* sign in styles */
-.sign-img {
-  height: 200px;
-}
 .sign-in {
   background-image: url(../images/network-bg.svg);
   background-position: center;
@@ -48,5 +51,49 @@ body {
   color: var(--bg3);
 }
 .sign-shadow {
-  box-shadow: 0px 0px 20px var(--text);
+  height: 550px;
+  border-top: 0;
+  background-color: transparent;
 }
+.mainDiv {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.form-bg {
+  position: absolute;
+  width: 75%;
+  height: 460px;
+  top: 100px;
+  right: 12.5%;
+  box-shadow: 0px 0px 5px var(--text);
+  background-image: url(../images/network-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-form {
+  position: absolute;
+  width: 425px;
+  height: 591px;
+  right: 17%;
+  top: 30px;
+  background: rgb(190, 255, 207);
+  background: radial-gradient(
+    circle,
+    rgba(190, 255, 207, 1) 30%,
+    rgba(158, 255, 239, 1) 65%
+  );
+}
+
+/* small device media */
+@media (max-width: 576px) {
+  .main-form {
+    left: 5%;
+    width: 90%;
+    height: auto;
+  }
+  .sign-shadow {
+    height: auto;
+  }
+} ;
