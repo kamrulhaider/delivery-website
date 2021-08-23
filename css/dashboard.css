@@ -64,7 +64,10 @@ body {
   cursor: pointer;
   color: var(--second-text-color);
 }
-
+.user-menu {
+  position: absolute !important;
+  left: -98% !important;
+}
 .list-group-item {
   border: none;
   padding: 20px 30px;
@@ -89,5 +92,11 @@ body {
 
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
+  }
+}
+@media (max-width: 768px) {
+  .user-menu {
+    position: absolute !important;
+    left: 0% !important;
   }
 }
