@@ -4,7 +4,7 @@
   --top: #222831;
   --bg: #d5eebb;
   --bg2: #78dec7;
-  --bg3: #5f7a61;
+  --text-1: #5f7a61;
   --text: #000000;
   --text2: #ffffff;
 }
@@ -14,7 +14,7 @@ body {
 
 /* common styles */
 .heading1 {
-  color: var(--bg3);
+  color: var(--text-1);
 }
 .heading2 {
   color: var(--top);
@@ -60,7 +60,7 @@ body {
   box-shadow: 0px 0px 5px var(--top);
 }
 .banner-btn button:last-child {
-  background-color: var(--bg3);
+  background-color: var(--text-1);
 }
 .banner-btn button > a {
   color: var(--text);
@@ -80,7 +80,7 @@ body {
   height: 48px;
   width: 48px;
   border-radius: 5px;
-  background-color: var(--bg3);
+  background-color: var(--text-1);
 }
 .icon-style i {
   color: var(--bg);
@@ -157,12 +157,12 @@ body {
   background-size: cover;
 }
 .cost-form {
-  background-color: var(--bg3);
+  background-color: var(--text-1);
   border-radius: 5px;
 }
 .price-btn {
   width: 100%;
-  border: 2px solid var(--bg3);
+  border: 2px solid var(--text-1);
   border-radius: 25px;
   color: var(--text);
   transition: all 0.3s ease-out;
@@ -189,7 +189,7 @@ body {
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: var(--bg3);
+  color: var(--text-1);
 }
 .cost-output::placeholder {
   font-family: FontAwesome;
@@ -199,7 +199,7 @@ body {
   display: inline-block !important;
   padding-left: 5px;
   padding-top: 2px;
-  color: var(--bg3);
+  color: var(--text-1);
 }
 
 /* footer styles */
