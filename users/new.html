@@ -36,7 +36,8 @@
                 <a href="new.html"
                     class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
                         class="fas fa-cart-plus me-2"></i>New Deliveries</a>
-                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="ongoing.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-running me-2"></i>Ongoing Deliveries</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-landmark me-2"></i>Previous Details</a>
@@ -48,7 +49,7 @@
         <div id="page-content-wrapper">
 
             <!-- navbar start -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 px-4">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 px-4">
                 <div class="d-flex align-items-center">
                     <i class="fas fa-align-left fs-4 me-3" id="menu-toggle"></i>
                 </div>
@@ -83,7 +84,7 @@
             <div class="container-fluid px-4">
                 <div class="mt-2">
                     <div>
-                        <h1 class="text-uppercase fw-bold fs-3 mb-0">New Delivery details</h1>
+                        <h5 class="text-uppercase fw-bold mb-0">New Delivery details</h5>
                         <p class="text-muted">Details about this delivery. Fill up the necessary field</p>
                     </div>
 
@@ -98,11 +99,11 @@
 
                 <!-- new delivery details start -->
                 <div class="row py-3 rounded-3 flex-md-row flex-column">
-                    <div class="col-md-2 mb-md-0 mb-2">
+                    <div class="col-lg-2 col-md-4 mb-md-0 mb-2">
                         <label for="newUnitQuantity" class="form-label fw-bold text-info">Unit Quantity</label>
                         <input type="number" class="form-control" id="newUnitQuantity" value="0">
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-lg-10 col-md-8">
                         <label for="productDetails" class="form-label fw-bold text-info">Product Details</label>
                         <input type="text" class="form-control" id="productDetails"
                             placeholder="Details information about the product..">
@@ -110,29 +111,36 @@
                     <div class="col">
                         <p class="mt-2 mb-0 text-muted"><small>Wrong information may cause extra fee.</small></p>
                     </div>
-                    <div class="col-12 d-flex mt-3">
-                        <div class="form-switch form-check me-2">
+                    <div class="col-12 d-flex flex-wrap mt-3">
+                        <div class="form-switch form-check me-3">
                             <input class="form-check-input" type="checkbox" id="fragile">
                             <label class="form-check-label" for="fragile" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Check if your product is vulnarable">Fragile <i
                                     class="far fa-question-circle text-danger"></i></label>
                         </div>
-                        <div class="form-switch form-check me-2">
+                        <div class="form-switch form-check me-3">
                             <input class="form-check-input" type="checkbox" id="medication">
                             <label class="form-check-label" for="medication" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Tooltip on top">Medication <i
+                                data-bs-placement="top" title="For emergency medication">Medication <i
                                     class="far fa-question-circle text-danger"></i></label>
                         </div>
-                        <div class="form-switch form-check me-2">
+                        <div class="form-switch form-check me-3">
                             <input class="form-check-input" type="checkbox" id="alcohol">
                             <label class="form-check-label" for="alcohol" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Tooltip on top">Alcohol <i
+                                data-bs-placement="top" title="Switch it if it's Alcohol">Alcohol <i
                                     class="far fa-question-circle text-danger"></i></label>
                         </div>
-                        <div class="form-switch form-check me-2">
+                        <div class="form-switch form-check me-3">
                             <input class="form-check-input" type="checkbox" id="tobacco">
-                            <label class="form-check-label" for="tobacco" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Tooltip on top">Tobacco <i
+                            <label class="form-check-label" for="tobacco"
+                                data-bs-toggle="Tobacco product like cigaratte" data-bs-placement="top"
+                                title="Tooltip on top">Tobacco <i
+                                    class="far fa-question-circle text-danger"></i></label>
+                        </div>
+                        <div class="form-switch form-check me-3">
+                            <input class="form-check-input" type="checkbox" id="weight">
+                            <label class="form-check-label" for="weight" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Heavy product switch">Weight(15+ kg) <i
                                     class="far fa-question-circle text-danger"></i></label>
                         </div>
                     </div>
@@ -140,38 +148,40 @@
 
                 <div class="row py-3 rounded-3 flex-md-row flex-column">
                     <div class="col">
-                        <label for="collectorDetails" class="form-label fw-bold text-info">Collector's Details</label>
-                        <input type="text" class="form-control mb-3" id="collectorDetails" placeholder="Contact name">
-                        <textarea class="form-control" placeholder="Instruction for deliveryman"></textarea>
+                        <label for="collectionPoint" class="form-label fw-bold text-info">Collection Point
+                            Address</label>
+                        <textarea id="collectionPoint" class="form-control"
+                            placeholder="Name of Business, place etc..."></textarea>
                     </div>
                     <div class="col">
-                        <label for="contactNumber" class="form-label fw-bold text-info">Contact Number</label>
-                        <div class="d-flex justify-content-between">
-                            <select class="form-select w-25 me-2" aria-label="Default select example">
-                                <option selected>select</option>
-                                <option value="1">Australia</option>
-                                <option value="2">Newzeland</option>
-                                <option value="3">Usa</option>
-                            </select>
-                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact number">
-                        </div>
+                        <label for="deliveryAddress" class="form-label fw-bold text-info">Delivery Address</label>
+                        <textarea id="deliveryAddress" class="form-control"
+                            placeholder="Steet number, city, postcode"></textarea>
                     </div>
                 </div>
 
                 <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
                     <div class="col">
-                        <label for="itemDescription" class="form-label fw-bold text-info">Item information</label>
-                        <textarea class="form-control mb-3" placeholder="Product information..."></textarea>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="trackingDetails">
-                            SMS Tracking
-                        </label>
+                        <label for="vehicle" class="form-label fw-bold text-info">Vehicle</label>
+                        <select class="form-select me-2" aria-label="Default select example">
+                            <option selected>Car</option>
+                            <option value="1">Truck</option>
+                            <option value="2">Motor Bike</option>
+                        </select>
                     </div>
                     <div class="col">
-                        <label for="collectionAdress" class="form-label fw-bold text-info">Other Instruction</label>
-                        <textarea class="form-control mb-3"
-                            placeholder="Further instruction that will need..."></textarea>
-                        <button class="btn btn-dark">Save</button>
+                        <label for="deliveryOption" class="form-label fw-bold text-info">Delivery Option</label>
+                        <select class="form-select me-2" aria-label="Default select example">
+                            <option selected>Estimated delivery within 2 hour</option>
+                            <option value="1">Your prefferd time delivery</option>
+                            <option value="2">Within 7 hour delivery</option>
+                        </select>
+                    </div>
+                    <div class="col-12 mt-2">
+                        <p><small>within two hour delivery guranted <a class="text-decoration-none" href="#">Condition
+                                    apply</a></small></p>
+                        <a href="" class="btn btn-dark me-3">Next</a>
+                        <a href="" class="btn btn-danger">Reset</a>
                     </div>
                 </div>
                 <!-- new delivery details end -->

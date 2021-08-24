@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer-home</title>
+    <title>Customer-new delivery</title>
 
     <!-- favicon link -->
     <link rel="shortcut icon" href="../images/fevicon.png" type="image/x-icon">
@@ -31,12 +31,12 @@
             </div>
             <div class="list-group list-group-flush my-3">
                 <a href="customer.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-home me-2"></i>Home</a>
                 <a href="new.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-cart-plus me-2"></i>New Deliveries</a>
                 <a href="ongoing.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold a"><i
                         class="fas fa-running me-2"></i>Ongoing Deliveries</a>
                 <a href="previous-details.html"
                     class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
@@ -82,67 +82,20 @@
             <!-- navbar end -->
 
             <div class="container-fluid px-4">
-                <div class="mt-2 d-flex justify-content-between">
+                <div class="mt-2 d-flex justify-content-between flex-wrap">
                     <div>
-                        <h5 class="text-uppercase fw-bold mb-0">Your current delivery details</h5>
-                        <p class="text-muted">Your default delivery details will be here.</p>
+                        <h5 class="text-uppercase fw-bold mb-0">Payment Details</h5>
+                        <p class="text-muted"><small>Create your prefferd payment method</small></p>
                     </div>
-                    <div>
-                        <button class="btn btn-dark">Edit</button>
-                    </div>
+                    <button class="btn h-25 btn-success bg-gradient mb-2"><a class="text-decoration-none text-white"
+                            href="payment-new.html">Add New Payment
+                            Method</a></button>
                 </div>
 
-                <!-- delivery details start -->
-                <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
-                    <div class="col mb-md-0 mb-2">
-                        <label for="unitName" class="form-label fw-bold text-info">Unit Name</label>
-                        <input type="text" class="form-control" id="unitName"
-                            placeholder="Business Name, suit, unit etc...">
-                    </div>
-                    <div class="col">
-                        <label for="collectionAdress" class="form-label fw-bold text-info">Collection Address</label>
-                        <input type="text" class="form-control" id="collectionAdress"
-                            placeholder="Put your default pick up address..">
-                    </div>
+                <div class="mt-5">
+                    <p>There is no saved method. You can add one by clicking <a href="payment-new.html"
+                            class="text-decoration-none">"Add New Payment Method"</a> Button</p>
                 </div>
-
-                <div class="row py-3 rounded-3 flex-md-row flex-column">
-                    <div class="col">
-                        <label for="collectorDetails" class="form-label fw-bold text-info">Collector's Details</label>
-                        <input type="text" class="form-control mb-3" id="collectorDetails" placeholder="Contact name">
-                        <textarea class="form-control" placeholder="Instruction for deliveryman"></textarea>
-                    </div>
-                    <div class="col">
-                        <label for="contactNumber" class="form-label fw-bold text-info">Contact Number</label>
-                        <div class="d-flex justify-content-between">
-                            <select class="form-select w-25 me-2" aria-label="Default select example">
-                                <option selected>select</option>
-                                <option value="1">Australia</option>
-                                <option value="2">Newzeland</option>
-                                <option value="3">Usa</option>
-                            </select>
-                            <input type="text" class="form-control" id="contactNumber" placeholder="Contact number">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
-                    <div class="col">
-                        <label for="itemDescription" class="form-label fw-bold text-info">Item information</label>
-                        <textarea class="form-control mb-3" placeholder="Product information..."></textarea>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="trackingDetails">
-                            SMS Tracking
-                        </label>
-                    </div>
-                    <div class="col">
-                        <label for="collectionAdress" class="form-label fw-bold text-info">Other Instruction</label>
-                        <textarea class="form-control mb-3"
-                            placeholder="Further instruction that will need..."></textarea>
-                        <button class="btn btn-dark">Save</button>
-                    </div>
-                </div>
-                <!-- delivery details end -->
 
             </div>
         </div>

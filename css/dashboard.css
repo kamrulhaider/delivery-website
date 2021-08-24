@@ -79,6 +79,18 @@ body {
   font-weight: bold;
   border: none;
 }
+.paypal-div,
+.card-div {
+  cursor: pointer;
+}
+.paypal,
+.credit-card {
+  height: 50px;
+}
+.payment-method-bg {
+  background-color: var(--second-text-color);
+  width: 50%;
+}
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
@@ -98,5 +110,8 @@ body {
   .user-menu {
     position: absolute !important;
     left: 0% !important;
+  }
+  .payment-method-bg {
+    width: 100%;
   }
 }
