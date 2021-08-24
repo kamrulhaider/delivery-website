@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer-home</title>
+    <title>Customer-new delivery</title>
 
     <!-- favicon link -->
     <link rel="shortcut icon" href="../images/fevicon.png" type="image/x-icon">
@@ -31,9 +31,10 @@
             </div>
             <div class="list-group list-group-flush my-3">
                 <a href="customer.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text active"><i
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-home me-2"></i>Home</a>
-                <a href="new.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
+                <a href="new.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
                         class="fas fa-cart-plus me-2"></i>New Deliveries</a>
                 <a href="#" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-running me-2"></i>Ongoing Deliveries</a>
@@ -80,27 +81,60 @@
             <!-- navbar end -->
 
             <div class="container-fluid px-4">
-                <div class="mt-2 d-flex justify-content-between">
+                <div class="mt-2">
                     <div>
-                        <h1 class="text-uppercase fw-bold fs-3 mb-0">Your current delivery details</h1>
-                        <p class="text-muted">Your default delivery details will be here.</p>
+                        <h1 class="text-uppercase fw-bold fs-3 mb-0">New Delivery details</h1>
+                        <p class="text-muted">Details about this delivery. Fill up the necessary field</p>
                     </div>
-                    <div>
-                        <button class="btn btn-dark">Edit</button>
+
+                    <!-- alert message -->
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Read the note!</strong> Some deliveries might took some extra time due to COVID19
+                        situation. <strong>Please vaccinate yourself as soon as possible.</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
+
                 </div>
 
-                <!-- delivery details start -->
-                <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
-                    <div class="col mb-md-0 mb-2">
-                        <label for="unitName" class="form-label fw-bold text-info">Unit Name</label>
-                        <input type="text" class="form-control" id="unitName"
-                            placeholder="Business Name, suit, unit etc...">
+                <!-- new delivery details start -->
+                <div class="row py-3 rounded-3 flex-md-row flex-column">
+                    <div class="col-md-2 mb-md-0 mb-2">
+                        <label for="newUnitQuantity" class="form-label fw-bold text-info">Unit Quantity</label>
+                        <input type="number" class="form-control" id="newUnitQuantity" value="0">
+                    </div>
+                    <div class="col-md-10">
+                        <label for="productDetails" class="form-label fw-bold text-info">Product Details</label>
+                        <input type="text" class="form-control" id="productDetails"
+                            placeholder="Details information about the product..">
                     </div>
                     <div class="col">
-                        <label for="collectionAdress" class="form-label fw-bold text-info">Collection Address</label>
-                        <input type="text" class="form-control" id="collectionAdress"
-                            placeholder="Put your default pick up address..">
+                        <p class="mt-2 mb-0 text-muted"><small>Wrong information may cause extra fee.</small></p>
+                    </div>
+                    <div class="col-12 d-flex mt-3">
+                        <div class="form-switch form-check me-2">
+                            <input class="form-check-input" type="checkbox" id="fragile">
+                            <label class="form-check-label" for="fragile" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Check if your product is vulnarable">Fragile <i
+                                    class="far fa-question-circle text-danger"></i></label>
+                        </div>
+                        <div class="form-switch form-check me-2">
+                            <input class="form-check-input" type="checkbox" id="medication">
+                            <label class="form-check-label" for="medication" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Tooltip on top">Medication <i
+                                    class="far fa-question-circle text-danger"></i></label>
+                        </div>
+                        <div class="form-switch form-check me-2">
+                            <input class="form-check-input" type="checkbox" id="alcohol">
+                            <label class="form-check-label" for="alcohol" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Tooltip on top">Alcohol <i
+                                    class="far fa-question-circle text-danger"></i></label>
+                        </div>
+                        <div class="form-switch form-check me-2">
+                            <input class="form-check-input" type="checkbox" id="tobacco">
+                            <label class="form-check-label" for="tobacco" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Tooltip on top">Tobacco <i
+                                    class="far fa-question-circle text-danger"></i></label>
+                        </div>
                     </div>
                 </div>
 
@@ -140,7 +174,7 @@
                         <button class="btn btn-dark">Save</button>
                     </div>
                 </div>
-                <!-- delivery details end -->
+                <!-- new delivery details end -->
 
             </div>
         </div>
