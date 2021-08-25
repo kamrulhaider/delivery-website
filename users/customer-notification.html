@@ -68,12 +68,12 @@
                                 <i class="fas fa-user me-2"></i>Alex
                             </a>
                             <ul class="dropdown-menu user-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Change Email</a></li>
-                                <li><a class="dropdown-item" href="#">Password Change</a></li>
+                                <li><a class="dropdown-item" href="customer-profile.html">Profile</a></li>
+                                <li><a class="dropdown-item" href="change-email.html">Change Email</a></li>
+                                <li><a class="dropdown-item" href="change-password.html">Password Change</a></li>
                                 <li><a class="dropdown-item" href="payments.html">Payment Details</a></li>
-                                <li><a class="dropdown-item" href="#">Notification</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="customer-notification.html">Notification</a></li>
+                                <li><a class="dropdown-item" href="../index.html">Logout</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -88,12 +88,13 @@
                         <p class="text-muted"><small>Update your notification to get real time details</small></p>
                     </div>
                     <button class="btn h-25 btn-success bg-gradient mb-2"><a class="text-decoration-none text-white"
-                            href="payment-new.html">Upadate</a></button>
+                            href="#">Update</a></button>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col">
-                        <div class="form-check form-switch">
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-6">
+                        <h4 class="text-info mt-3 fw-bold">Regular Notification</h4>
+                        <div class="form-check form-switch mt-3">
                             <input class="form-check-input" type="checkbox" id="">
                             <label class="form-check-label" for="">Notify when the delivery is ready to go</label>
                         </div>
@@ -147,11 +148,28 @@
                         </div>
                         <div class="form-check form-switch mt-3">
                             <input class="form-check-input" type="checkbox" id="">
-                            <label class="form-check-label" for="">Notify me when the delivery fail to deliver</label>
+                            <label class="form-check-label" for="">Notify me when the delivery fails to deliver</label>
                         </div>
                         <div class="form-check form-switch mt-3">
                             <input class="form-check-input" type="checkbox" id="">
-                            <label class="form-check-label" for="">Notify everyday Closed status</label>
+                            <label class="form-check-label" for="">Notify every time after invoce Closed </label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="text-info mt-3 fw-bold">Delivery Information Notification</h4>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">Notify me when the delivery is outside the
+                                radius</label>
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">Notify if the pakage take longer time than the
+                                normal.</label>
+                        </div>
+                        <div class="form-check form-switch mt-3">
+                            <input class="form-check-input" type="checkbox" id="">
+                            <label class="form-check-label" for="">Notify me when new shedule is set. </label>
                         </div>
                     </div>
                 </div>
