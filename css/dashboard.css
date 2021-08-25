@@ -91,6 +91,18 @@ body {
   background-color: var(--second-text-color);
   width: 50%;
 }
+.customer-profile-bg {
+  background-image: url(../images/form-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid var(--second-bg-color);
+}
+.user-photo {
+  border-radius: 50%;
+  padding: 20%;
+}
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
