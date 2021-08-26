@@ -103,7 +103,21 @@ body {
   border-radius: 50%;
   padding: 20%;
 }
-
+.driver-img {
+  height: 100px;
+  width: 100px;
+}
+.driver-details {
+  background-image: url(../images/driver-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+.driver-details-img {
+  height: 100px;
+  width: 100px;
+}
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
