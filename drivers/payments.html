@@ -82,9 +82,6 @@
                         <h5 class="text-uppercase fw-bold mb-0">Your Prefferd payment details</h5>
                         <p class="text-muted"><small>give us your bank account number or Paypal email</small></p>
                     </div>
-                    <div>
-                        <button class="btn btn-dark">Change</button>
-                    </div>
                 </div>
 
                 <!-- Payment details start -->
@@ -106,9 +103,13 @@
                 </div>
 
                 <div class="row py-3 rounded-3 flex-md-row flex-column">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <label for="paypalEmail" class="form-label fw-bold text-info">Paypal Email</label>
                         <input type="email" class="form-control" id="paypalEmail" placeholder="example@example.com">
+                        <p class="text-muted"><small>Paypal will deduct their percentage.</small></p>
+                        <div>
+                            <button class="btn btn-dark">Save</button>
+                        </div>
                     </div>
                 </div>
             </div>

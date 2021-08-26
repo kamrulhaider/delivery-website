@@ -34,7 +34,7 @@
                     class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-home me-2"></i>Home</a>
                 <a href="previous-details.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-landmark me-2"></i>Previous Details</a>
             </div>
         </div>
@@ -79,83 +79,32 @@
             <div class="container-fluid px-4">
                 <div class="mt-2 d-flex justify-content-between flex-wrap">
                     <div>
-                        <h5 class="text-uppercase fw-bold mb-0">Previous Delivery Details</h5>
-                        <p class="text-muted"><small>See all the previous delivery details and bulk history</small></p>
-                    </div>
-                    <button class="btn h-25 btn-outline-info mb-2">Download Report</button>
-                </div>
-
-                <div class="mb-3">
-                    <a href="previous-details.html" class="btn btn-outline-dark me-3">Past Deliveries</a>
-                    <a href="#" class="btn btn-dark">RCTI</a>
-                </div>
-
-                <!-- search bar -->
-                <div>
-                    <form class="d-flex input-group-sm flex-md-nowrap gap-2 flex-wrap">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <select class="form-select me-2" aria-label="Default select example">
-                            <option selected>Consignment Number</option>
-                            <option value="1">Product ID</option>
-                            <option value="2">Ref. ID</option>
-                            <option value="3">Postcode</option>
-                        </select>
-                        <button class="btn btn-outline-success me-2" type="submit">Search</button>
-                        <input class="form-control w-25" type="number" placeholder="page number" aria-label="Page">
-                    </form>
-                </div>
-                <!-- search bar end -->
-
-                <!-- table start  -->
-                <div class="row mt-3">
-                    <div class="col table-responsive">
-                        <table class="table table-success table-hover table-striped align-middle">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#ID</th>
-                                    <th scope="col">Delivery Location</th>
-                                    <th scope="col">Delivery at</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col">Paid?</th>
-                                    <th scope="col">Earned</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Adelaide</td>
-                                    <td>06.15pm, 21Aug</td>
-                                    <td>Closed</td>
-                                    <td>
-                                        <input type="checkbox" class="form-check" name="" id="">
-                                    </td>
-                                    <td>22.45 AUD</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">&laquo;</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">&raquo;</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <h5 class="text-uppercase fw-bold mb-0">Emergency Contact</h5>
+                        <p class="text-muted"><small>incase of any emergency situation please provide your closed ones
+                                number.</small></p>
                     </div>
                 </div>
-                <!-- table end -->
 
+                <div class="row mt-4 mb-4">
+                    <div class="col-md-6">
+                        <label for="emergencyNum" class="form-label text-info fw-bold">Emergency Number</label>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" placeholder="001212101">
+                        </div>
+                        <label for="secondEmergencyNo" class="form-label text-info fw-bold">Second Number</label>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <label for="relation" class="form-label text-info fw-bold">Relation with you</label>
+                        <div class="input-group input-group-sm mb-3">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-sm" placeholder="spouse/father/mother...">
+                        </div>
+                        <button class="btn btn-success">Confirm</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

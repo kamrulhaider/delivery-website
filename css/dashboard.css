@@ -118,6 +118,15 @@ body {
   height: 100px;
   width: 100px;
 }
+.bg-card {
+  background-image: url(../images/wave.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text-card {
+  text-shadow: 2px 2px 2px rgba(150, 150, 152, 1);
+}
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
