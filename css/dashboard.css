@@ -83,12 +83,15 @@ body {
 .card-div {
   cursor: pointer;
 }
+.paypal-div:hover,
+.card-div:hover {
+  background-color: var(--second-text-color);
+}
 .paypal,
 .credit-card {
   height: 50px;
 }
 .payment-method-bg {
-  background-color: var(--second-text-color);
   width: 50%;
 }
 .customer-profile-bg {
