@@ -48,3 +48,6 @@ body {
 .price-btn {
   background-color: var(--bg2);
 }
+.contact-txtarea {
+  height: 188px;
+}
