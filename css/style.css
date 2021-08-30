@@ -119,7 +119,7 @@ body {
 }
 
 /* category styles */
-.category-img {
+.category-img-main {
   border: 2px solid var(--text);
   border-radius: 50%;
 }
@@ -145,7 +145,7 @@ body {
     transform: rotate3d(0, 0, 1, 360deg);
   }
 }
-.category-img:hover {
+.category-img-main:hover {
   animation: rotate 5s normal linear infinite;
 }
 

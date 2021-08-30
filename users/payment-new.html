@@ -27,7 +27,7 @@
         <!-- Sidebar -->
         <div class="bg-dark bg-gradient" id="sidebar-wrapper">
             <div class="sidebar-heading ms-2 py-4 fs-5 fw-bold">
-                <a class="primary-text text-decoration-none" href="../index.html">Pacific Cliffs</a>
+                <a class="primary-text text-decoration-none" href="../index.html">Pacific Cliff</a>
             </div>
             <div class="list-group list-group-flush my-3">
                 <a href="customer.html"
@@ -92,15 +92,15 @@
                 <div class="mt-5">
                     <h6>Add new payment method below</h6>
                     <div class="row flex-column p-5 payment-method-bg rounded-3">
-                        <div class="col paypal-div border-dark border rounded-3 py-1">
+                        <div id="paypal-id" class="col paypal-div border-dark border rounded-3 py-1">
                             <img class="img-fluid paypal" src="../images/paypal.png" alt="">
                             <h5 class="text-dark ms-3 d-inline-block">Paypal</h5>
                         </div>
-                        <div class="col card-div border-dark border rounded-3 py-1 mt-2">
+                        <div id="card-id" class="col card-div border-dark border rounded-3 py-1 mt-2">
                             <img class="img-fluid credit-card" src="../images/card.png" alt="">
                             <h5 class="text-dark ms-3 d-inline-block">Card</h5>
                         </div>
-                        <div class="col card-div mt-2">
+                        <div class="col mt-2">
                             <button class="btn btn-success">Confirm</button>
                         </div>
                     </div>
@@ -117,6 +117,7 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/payment.js"></script>
 </body>
 
 </html>

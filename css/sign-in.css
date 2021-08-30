@@ -63,7 +63,7 @@ body {
 }
 .form-tab-btn,
 .form-tab-btn-hover {
-  background-image: linear-gradient(to right, var(--text), var(--bg2));
+  background-image: linear-gradient(to right, var(--bg2), var(--text));
 }
 .sign-in {
   background-image: url(../images/network-bg.svg);
