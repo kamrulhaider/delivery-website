@@ -78,34 +78,53 @@
             <!-- navbar end -->
 
             <div class="container-fluid px-4">
-                <div class="mt-2 d-flex justify-content-between flex-wrap">
+                <div class="mt-2 d-flex justify-content-between">
                     <div>
-                        <h5 class="text-uppercase fw-bold mb-0">Change your email</h5>
-                        <p class="text-muted"><small>email changing can effect login & email communication of this
-                                account.</small></p>
+                        <h5 class="text-uppercase fw-bold mb-0">Your Driving Documents</h5>
+                        <p class="text-muted"><small>Please upload the scan copies of your driving documents</small></p>
                     </div>
                 </div>
 
-                <div class="row mt-4 mb-4">
+                <!-- Payment details start -->
+                <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
+                    <div class="col-12 mb-3">
+                        <h6 class="text-info fw-bold">Registered with GST?</h6>
+                        <!-- gst -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="gstYes">
+                            <label class="form-check-label" for="gstYes">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="gstNo" checked>
+                            <label class="form-check-label" for="gstNo">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-md-0 mb-2">
+                        <label for="bankAccNo" class="form-label fw-bold text-info">Driver's licence</label>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control">
+                        </div>
+                    </div>
                     <div class="col-md-6">
-                        <label for="currentPass" class="form-label text-info fw-bold">Existing Password</label>
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="password" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-sm" placeholder="current password">
+                        <label for="vehicleReg" class="form-label fw-bold text-info">Vehicle registration</label>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control">
                         </div>
-                        <label for="newPassword" class="form-label text-info fw-bold">New Password</label>
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="password" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-sm" placeholder="new password">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="idProof" class="form-label fw-bold text-info">Identification Proof</label>
+                        <div class="input-group mb-3">
+                            <input type="file" class="form-control">
                         </div>
-                        <label for="confirmPassword" class="form-label text-info fw-bold">Confirm Password</label>
-                        <div class="input-group input-group-sm mb-3">
-                            <input type="password" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-sm" placeholder="confirm password">
-                        </div>
-                        <button class="btn btn-success">Confirm</button>
+                        <button class="btn btn-outline-success">Upload</button>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
