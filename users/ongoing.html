@@ -121,16 +121,20 @@
                                     <th scope="col">Status</th>
                                     <th scope="col">ETA*</th>
                                     <th scope="col">Deliverd by</th>
+                                    <th scope="col">Traking</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="table-cursor">
                                     <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Adelaide</td>
-                                    <td>ongoing</td>
-                                    <td>12:00pm</td>
-                                    <td>Car</td>
+                                    <td onclick="ongoing()">Mark</td>
+                                    <td onclick="ongoing()">Adelaide</td>
+                                    <td onclick="ongoing()">ongoing</td>
+                                    <td onclick="ongoing()">12:00pm</td>
+                                    <td onclick="ongoing()">Car</td>
+                                    <td><button type="button" class="border-0 bg-transparent text-success"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">Track
+                                        </button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -161,6 +165,26 @@
         </div>
     </div>
     <!-- page content end -->
+
+    <!-- map here -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1as6inv7APLe8e_N3aZ0XA8pJ-uE7u6dO" width="100%"
+                        height="480"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- js link -->
@@ -168,6 +192,7 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/ongoing.js"></script>
 </body>
 
 </html>

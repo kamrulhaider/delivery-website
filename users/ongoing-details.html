@@ -36,8 +36,7 @@
                 <a href="customer.html"
                     class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-home me-2"></i>Home</a>
-                <a href="new.html"
-                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold active"><i
+                <a href="new.html" class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
                         class="fas fa-cart-plus me-2"></i>New Deliveries</a>
                 <a href="ongoing.html"
                     class="list-group-item list-group-item-action bg-transparent second-text fw-bold"><i
@@ -87,7 +86,7 @@
             <div class="container-fluid px-4">
                 <div class="mt-2">
                     <div>
-                        <h5 class="text-uppercase fw-bold mb-0">New Delivery details</h5>
+                        <h5 class="text-uppercase fw-bold mb-0">Delivery Ongoing</h5>
                         <p class="text-muted">Details about this delivery. Fill up the necessary field</p>
                     </div>
 
@@ -104,40 +103,40 @@
                 <div class="row py-3 rounded-3 flex-md-row flex-column">
                     <div class="col-lg-2 col-md-4 mb-md-0 mb-2">
                         <label for="newUnitQuantity" class="form-label fw-bold text-info">Unit Quantity</label>
-                        <input type="number" class="form-control" id="newUnitQuantity" value="0">
+                        <input type="number" class="form-control" id="newUnitQuantity" value="0" disabled>
                     </div>
                     <div class="col-lg-10 col-md-8">
                         <label for="productDetails" class="form-label fw-bold text-info">Product Details</label>
                         <input type="text" class="form-control" id="productDetails"
-                            placeholder="Details information about the product..">
+                            placeholder="Details information about the product.." disabled disabled>
                     </div>
                     <div class="col">
                         <p class="mt-2 mb-0 text-muted"><small>Wrong information may cause extra fee.</small></p>
                     </div>
                     <div class="col-12 d-flex flex-wrap mt-3">
                         <div class="form-switch form-check me-3">
-                            <input class="form-check-input" type="checkbox" id="fragile">
+                            <input class="form-check-input" type="checkbox" id="fragile" disabled>
                             <label class="form-check-label" for="fragile" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Check if your product is vulnarable">Fragile </label>
                         </div>
                         <div class="form-switch form-check me-3">
-                            <input class="form-check-input" type="checkbox" id="medication">
+                            <input class="form-check-input" type="checkbox" id="medication" disabled>
                             <label class="form-check-label" for="medication" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="For emergency medication">Medication </label>
                         </div>
                         <div class="form-switch form-check me-3">
-                            <input class="form-check-input" type="checkbox" id="alcohol">
+                            <input class="form-check-input" type="checkbox" id="alcohol" disabled>
                             <label class="form-check-label" for="alcohol" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Switch it if it's Alcohol">Alcohol </label>
                         </div>
                         <div class="form-switch form-check me-3">
-                            <input class="form-check-input" type="checkbox" id="tobacco">
+                            <input class="form-check-input" type="checkbox" id="tobacco" disabled>
                             <label class="form-check-label" for="tobacco"
                                 data-bs-toggle="Tobacco product like cigaratte" data-bs-placement="top"
                                 title="Tooltip on top">Tobacco </label>
                         </div>
                         <div class="form-switch form-check me-3">
-                            <input class="form-check-input" type="checkbox" id="weight">
+                            <input class="form-check-input" type="checkbox" id="weight" disabled>
                             <label class="form-check-label" for="weight" data-bs-toggle="tooltip"
                                 data-bs-placement="top" title="Heavy product switch">Weight(15+ kg) </label>
                         </div>
@@ -148,20 +147,20 @@
                     <div class="col">
                         <label for="collectionPoint" class="form-label fw-bold text-info">Collection Point
                             Address</label>
-                        <textarea id="collectionPoint" class="form-control"
-                            placeholder="Name of Business, place etc..."></textarea>
+                        <textarea id="collectionPoint" class="form-control" placeholder="Name of Business, place etc..."
+                            disabled></textarea>
                     </div>
                     <div class="col">
                         <label for="deliveryAddress" class="form-label fw-bold text-info">Delivery Address</label>
-                        <textarea id="deliveryAddress" class="form-control"
-                            placeholder="Steet number, city, postcode"></textarea>
+                        <textarea id="deliveryAddress" class="form-control" placeholder="Steet number, city, postcode"
+                            disabled></textarea>
                     </div>
                 </div>
 
                 <div class="row py-3 rounded-3 mb-3 flex-md-row flex-column">
                     <div class="col">
                         <label for="vehicle" class="form-label fw-bold text-info">Vehicle</label>
-                        <select class="form-select me-2" aria-label="Default select example">
+                        <select class="form-select me-2" aria-label="Default select example" disabled>
                             <option selected>Car</option>
                             <option value="1">Truck</option>
                             <option value="2">Motor Bike</option>
@@ -169,18 +168,18 @@
                     </div>
                     <div class="col">
                         <label for="deliveryOption" class="form-label fw-bold text-info">Delivery Option</label>
-                        <select class="form-select me-2" aria-label="Default select example">
+                        <select class="form-select me-2" aria-label="Default select example" disabled>
                             <option selected>Estimated delivery within 2 hour</option>
                             <option value="1">Your prefferd time delivery</option>
                             <option value="2">Within 7 hour delivery</option>
                         </select>
                     </div>
-                    <div class="col-12 mt-2">
+                    <!-- <div class="col-12 mt-2">
                         <p><small>within two hour delivery guranted <a class="text-decoration-none" href="#">Condition
                                     apply</a></small></p>
                         <a href="confirm-delivery.html" class="btn btn-dark me-3">Next</a>
                         <a href="" class="btn btn-danger">Reset</a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- new delivery details end -->
 
