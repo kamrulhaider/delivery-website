@@ -16,6 +16,7 @@ body {
 
 .second-text {
   color: var(--second-text-color);
+  font-size: 14px;
 }
 
 .primary-bg {
