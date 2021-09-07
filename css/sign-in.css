@@ -82,7 +82,7 @@ body {
   color: var(--bg3);
 }
 .sign-shadow {
-  height: 550px;
+  height: 630px;
   border-top: 0;
   background-color: transparent;
 }
@@ -106,7 +106,7 @@ body {
 .main-form {
   position: absolute;
   width: 425px;
-  height: 591px;
+  height: 660px;
   right: 17%;
   top: 30px;
   background: rgb(190, 255, 207);
