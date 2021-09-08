@@ -29,7 +29,7 @@ body {
   height: 45px;
 }
 .pacific-nav {
-  background-color: var(--top);
+  background-color: #131922;
 }
 .top-btn a {
   text-decoration: none;
@@ -56,7 +56,10 @@ body {
 }
 /* footer styles */
 footer {
-  background-color: var(--top);
+  background-color: #131922;
+}
+.footer-link {
+  list-style: none;
 }
 .footer-link li a,
 .address {

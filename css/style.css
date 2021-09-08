@@ -19,13 +19,16 @@ body {
 .heading2 {
   color: var(--top);
 }
+.global-p {
+  color: #212121;
+}
 
 /* topbar styles */
 .logo {
   height: 45px;
 }
 .pacific-nav {
-  background-color: var(--top);
+  background-color: #131922;
 }
 .top-btn a {
   text-decoration: none;
@@ -95,6 +98,9 @@ body {
 .mobile-screen {
   border-radius: 25px;
 }
+/* .ex-card-h {
+  height: 265px;
+} */
 
 /* network section styles */
 .network {
@@ -210,7 +216,10 @@ body {
 
 /* footer styles */
 footer {
-  background-color: var(--top);
+  background-color: #131922;
+}
+.footer-link {
+  list-style: none;
 }
 .footer-link li a,
 .address {
