@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* color variables */
+:root {
+  --top: #222831;
+  --bg: #d5eebb;
+  --bg2: #78dec7;
+  --text-1: #5f7a61;
+  --text: #000000;
+  --text2: #ffffff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* background-image: url(../images/network-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; */
+}
+/* common styles */
+.heading1 {
+  color: var(--text);
+}
+.heading2 {
+  color: var(--top);
+}
+
+/* topbar styles */
+.logo {
+  height: 45px;
+}
+.pacific-nav {
+  background-color: var(--top);
+}
+.top-btn a {
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--bg2);
+  border-radius: 25px;
+  border-radius: 20px;
+}
+.top-btn a:last-child {
+  text-decoration: none;
+  color: var(--text);
+  background-color: var(--bg);
+  border-radius: 25px;
+  border-radius: 20px;
+}
+.top-btn a:hover {
+  background-color: var(--text2);
+}
+.price-btn {
+  background-color: var(--bg2);
+}
+.contact-txtarea {
+  height: 188px;
+}
+/* footer styles */
+footer {
+  background-color: var(--top);
+}
+.footer-link li a,
+.address {
+  text-decoration: none;
+  color: var(--bg2);
+  transition: all 0.3s ease-in;
+}
+.footer-link li a:hover {
+  text-decoration: none;
+  color: var(--text2);
+}
+.phone-email {
+  cursor: pointer;
+  color: var(--text2);
+}
