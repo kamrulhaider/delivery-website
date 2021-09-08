@@ -98,7 +98,7 @@ body {
 
 /* network section styles */
 .network {
-  background-image: url(../images/network-bg.svg);
+  background-image: url(../images/network-bg.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,8 +126,9 @@ body {
 .category-img-main {
   border: 2px solid var(--text);
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
 }
-@keyframes rotate {
+/* @keyframes rotate {
   0% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
@@ -148,9 +149,10 @@ body {
     -webkit-transform: rotate3d(0, 0, 1, 360deg);
     transform: rotate3d(0, 0, 1, 360deg);
   }
-}
+} */
 .category-img-main:hover {
-  animation: rotate 5s normal linear infinite;
+  /* animation: rotate 5s normal linear infinite; */
+  transform: scale(1.1);
 }
 
 /* price check section style */
