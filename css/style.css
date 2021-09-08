@@ -124,7 +124,7 @@ body {
 
 /* category styles */
 .category-img-main {
-  border: 2px solid var(--text);
+  /* border: 2px solid var(--text); */
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
